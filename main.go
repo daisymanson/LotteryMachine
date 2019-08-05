@@ -33,7 +33,6 @@ func (ball *Balls) Shuffle(vals []int) {
 func main() {
 	ball := Balls{}
 	seed := ball.CreateNew(100000)
-	fmt.Println("洗牌前: ", seed)
 	ball.Shuffle(seed)
-	fmt.Println("洗牌後", seed)
+	fmt.Println("洗球結果:", seed)
 }
